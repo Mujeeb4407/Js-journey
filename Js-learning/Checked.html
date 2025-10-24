@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font: 20px Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 40px;
+      }
+
+      label {
+        margin-left: 8px;
+        font-size: 18px;
+      }
+
+      input[type="checkbox"],
+      input[type="radio"] {
+        transform: scale(1.2);
+        margin-right: 6px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #0078d4;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #005fa3;
+      }
+
+      p {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" name="card" id="myCheckBox" />
+    <label for="myCheckbox">Subscribe</label><br /><br />
+
+    <input type="radio" name="card" id="masterCardBtn" />
+    <label for="masterCardBtn">Mastercard</label><br />
+    <input type="radio" name="card" id="paypalBtn" />
+    <label for="paypalBtn">Paypal</label><br />
+    <input type="radio" name="card" id="visaBtn" />
+    <label for="visaBtn">Visa</label><br /><br />
+    <button type="submit" id="mySubmit">Submit</button>
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
+  </body>
+  <script src="Checked.js"></script>
+</html>

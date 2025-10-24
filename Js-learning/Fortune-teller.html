@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        padding: 40px;
+        text-align: center;
+      }
+
+      h3 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+
+      select,
+      button {
+        font-size: 18px;
+        padding: 10px 15px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #2980b9;
+      }
+
+      #fortuneOutput {
+        margin-top: 30px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #27ae60;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Select a number from 1 to 5 to see your fortune for today</h3>
+    <select id="fortuneSelect">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <button onclick="showFortune()">Reveal my fortune</button>
+    <p id="fortuneOutput"></p>
+
+    <script src="Fortune-teller.js"></script>
+  </body>
+</html>
