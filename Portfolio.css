@@ -1,0 +1,153 @@
+body {
+  font-family: "Poppins", sans-serif;
+    background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
+  color: #2c3e50;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#clock {
+  font-size: 1.1em;
+  color: #2980b9;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#profileImage {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#myName {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+#myTitle {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+section {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  font-size: 1.4em;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #444;
+}
+
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding-left: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  gap: 20px 40px; /* vertical and horizontal spacing */
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#skills li {
+  width: 45%; /* two items per row */
+  background-color: #e0f0ff;
+  color: #1a73e8;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.95em;
+  text-align: center;
+}
+
+/* Publications */
+.publication h4 {
+  font-size: 1.1em;
+  color: #2980b9;
+  margin-bottom: 5px;
+}
+
+.publication p {
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  #myName {
+    font-size: 1.8em;
+  }
+
+  #myTitle {
+    font-size: 1em;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  #skills li {
+    font-size: 0.9em;
+    padding: 6px 10px;
+  }
+}
